@@ -78,7 +78,7 @@ QQ交流群号：
 - 5.根目录下data.bak为数据库还原文件，还原即可。
 - 6.`/config/ConnectionStrings.config`为数据库配置连接。
 - 7.`/Template`为模板配置目录，在此配置模板即可。
-- 8.后台超级管理员默认帐号名为：`admin`，密码：`admin888`，如果登录上，请在数据库上执行下面语法即可恢复初始`admin888`密码：
+- 8.后台超级管理员默认帐号名为：`admin`，密码：`admin888`，如果登录不上，请在数据库上执行下面语法即可恢复初始`admin888`密码：
 ```
 update zl_manager set adminpassword='7fef6171469e80d32c0559f88b377245' where adminid=1  --重设后台admin密码为admin888
 ```
