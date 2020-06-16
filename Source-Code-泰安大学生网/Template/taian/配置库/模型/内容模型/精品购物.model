@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>39</ModelID>
+    <ModelName>精品购物</ModelName>
+    <Description />
+    <TableName>ZL_C_jpgw</TableName>
+    <ItemName>购物</ItemName>
+    <ItemUnit>条</ItemUnit>
+    <ItemIcon>cloth.gif</ItemIcon>
+    <ModelType>1</ModelType>
+    <ContentModule>/内容页/默认精品购物内容页.html</ContentModule>
+    <MultiFlag>true</MultiFlag>
+    <IsNull>false</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>1</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail />
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <ModelID>38</ModelID>
+    <ModelName>校园代理</ModelName>
+    <Description />
+    <TableName>ZL_C_xydl</TableName>
+    <ItemName>代理</ItemName>
+    <ItemUnit>条</ItemUnit>
+    <ItemIcon>Card.gif</ItemIcon>
+    <ModelType>1</ModelType>
+    <ContentModule>/内容页/默认校园代理内容页.html</ContentModule>
+    <MultiFlag>true</MultiFlag>
+    <IsNull>false</IsNull>
+    <NodeID>0</NodeID>
+    <SysModel>1</SysModel>
+    <FromModel>0</FromModel>
+    <Thumbnail />
+    <Islotsize>false</Islotsize>
+  </Table>
+</NewDataSet>

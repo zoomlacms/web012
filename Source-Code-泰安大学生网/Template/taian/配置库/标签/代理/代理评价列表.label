@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>390</LabelID>
+    <LabelName>代理评价列表</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>代理</LabelCate>
+    <LabelDesc />
+    <LabelParam>TitleNum,40,1,参数说明|ShowNum,10,1,参数说明</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_Pub_DLPJ</LabelTable>
+    <LabelField>PubContentid,PubTitle,PubUserName</LabelField>
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>{Repeate}
+&lt;li&gt;&lt;span&gt;{Field="PubUserName"/}：&lt;/span&gt;
+
+&lt;a href="{ZL:GetInfoUrl({Field="PubContentid"/})/}"&gt;{ZL:CutText({Field="PubTitle"/},@TitleNum,)/}&lt;/a&gt;
+
+&lt;/li&gt;
+
+
+
+
+{/Repeate}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

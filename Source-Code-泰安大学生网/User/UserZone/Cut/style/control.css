@@ -1,0 +1,40 @@
+/*----------------------------------按钮样式---------------------------------------------*/
+/*提交组件*/
+a.btn_sub{width:153px;height:44px;margin:15px 10px 0;background:url(/public/img/widget/index/btn_submit.gif) no-repeat;}
+/*底部搜索*/
+.btnSearch{display:inline;float:left;width:80px;height:28px;margin:4px 0 0;background-position:0 -70px;}
+/*预览组件*/
+.m_button a.m_b1{background-position:0 -80px;}
+/*添加到门户*/
+.m_button a.m_b2{width:93px;background-position:0 -140px;}
+/*加为收藏*/
+.m_button a.m_b3{background-position:0 -110px;}
+/*修改组件*/
+.m_button a.m_b4{background-position:0 -50px;}
+/*删除组件*/
+.m_button a.m_b5{background-position:0 -170px;}
+/*回复按钮*/
+.btn_reply{display:inline-block;width:80px;height:22px;text-align:left;text-indent:-9999px;background:url(/public/img/widget/other/buttons.gif) no-repeat 0 -365px;}
+/*表情按钮*/
+.btn_com,.btn_face{display:block;text-indent:-9999px;}
+.btn_com{width:130px;height:38px;background:url(/public/img/widget/other/btn_comment.png) no-repeat;position:absolute;top:0;left:0;}
+/*表情按钮*/
+.btn_face{width:85px;height:23px;background:url(/public/img/widget/other/buttons.gif) no-repeat 0 -340px;position:absolute;top:17px;left:500px;}
+/*评论下面的登录按钮*/
+.btn_reply2{display:inline-block;float:left;width:72px;height:22px;padding-top:7px;text-align:center;vertical-align:middle;background:url(/public/img/widget/other/buttons.gif) no-repeat 0 -310px;}
+/*提交页分析按钮*/
+.btn_analysis{display:inline-block;width:80px;height:39px;background:url(/public/img/widget/other/buttons.gif) no-repeat 0 -442px;border:none;vertical-align:middle;}
+/*公用按钮*/
+.bg_all2{background:url(/public/img/widget/other/buttons.gif) no-repeat;}
+.btn_common{display:inline-block;border:none;width:100px;height:24px;line-height:25px;text-align:center;background-position:0 -233px;font-size:14px;font-weight:bold;color:#032B4E;}
+.btn_sub_en{background:url(/public/img/widget/other/buttons.gif) no-repeat 0 -233px;cursor:pointer;}
+.btn_sub_dis{background:url(/public/img/widget/other/buttons.gif) no-repeat 0 -200px;cursor:pointer;color:#606060;}
+
+/*----------------------------------文本框样式---------------------------------------------*/
+.txt_input,.txt_select,.txt_textarea{border:1px solid #ccc;border-top-width:2px;padding:2px 4px;border-color:#7C7C7C #C3C3C3 #DDDDDD #C3C3C3;vertical-align:middle;}
+.txt_active{display:block;padding:10px;background:#D0F0FF;}
+input:focus,textarea:focus{background-color:#feffec;}
+
+/*-----------------------------表格样式--------------------------------------------*/
+.tableBox,.tableBox th,.tableBox td{border:1px solid #c9e5f1;}
+.tableBox th,.tableBox td{padding:4px 2px;text-align:center;font-size:12px;vertical-align:middle;}

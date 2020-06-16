@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>94</LabelID>
+    <LabelName>bottom</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;div id="bottom"&gt;
+&lt;ul&gt;
+&lt;li class="i1"&gt;&lt;a href="{ZL:GetInfoUrl(396)/}"&gt;版权声明&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;|&lt;/li&gt;
+&lt;li class="i2"&gt;&lt;a href="{ZL:GetInfoUrl(397)/}"&gt;刊登广告&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;|&lt;/li&gt;
+&lt;li class="i3"&gt;&lt;a href="{ZL:GetInfoUrl(398)/}"&gt;使用说明&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;|&lt;/li&gt;
+&lt;li class="i4"&gt;&lt;a href="{ZL:GetNodeLinkUrl(18)/}"&gt;友情链接&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;|&lt;/li&gt;
+&lt;li class="i5"&gt;&lt;a href="{ZL.Label id="论坛地址"/}"&gt;论坛交流&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;|&lt;/li&gt;
+&lt;li class="i6"&gt;&lt;a href="{ZL:GetInfoUrl(390)/}"&gt;联系我们&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="clear"&gt;&lt;/div&gt;
+&lt;p&gt;Copyright &amp;copy;  2011 泰安大学生网  版权所有&lt;br /&gt;
+技术支持：&lt;a href="http://www.hx008.com" target="_blank"&gt;华夏互联hx008.com&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

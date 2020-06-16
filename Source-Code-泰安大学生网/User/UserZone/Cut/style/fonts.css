@@ -1,0 +1,22 @@
+/* ×ÖÌåÑùÊ½ */
+.forgetFont{color:#ED1F24;}
+.captionFont{color:#324B4F;}
+.titleFont{color:#2B636D;}
+.timeFont{color:#F8991D;font-size:11px;}
+.grayFont{color:#999;}
+.moreFont{color:#67959C;}
+.txtFont{font-size:12px;}
+.serviceFont{color:#59931D;}
+.blueFont,.serviceP,.serviceP a,.registerBox,.registerForm label,.topMenus dt a,.topMenus dd a,.detail h2 a,.detail h3 a,.rss,.infoBox li a,.title a,.tab li.current2,.featureCont,.content3 p,.content,.content a,.wp_ml_list li h4,.wp_ml_list .current span,.mr_tab_cont span{color:#337397;}
+.detail h2 a{font-size:24px;}
+.detail h3{font-size:14px;}
+.errorFont{color:#F00;}
+.wp_ml_list li h4{font-size:15px;font-weight:600;text-decoration:underline;}
+.title2{font-size:14px;font-weight:bold;color:#999;}
+
+/* widget */
+.navType li a,.navClassify ul li a,.navClassify span a,.w_h a,.w_detail span a,.w_submit a,.w_r_comment,.w_r_pop,.w_tab a span,.w_tab_box dl dd a,.comment a{color:#0d536f;}
+.mainWrap h4,.comment_box h5{color:#2F5473;}
+#classify dl dd em{font-style:normal;color:#2047B0;}
+
+#classify .mainWrap,#manager .mainWrap{color:#666;}

@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="User_UserFriend_GetFriends, App_Web_1e5k3s5m" enableEventValidation="false" viewStateEncryptionMode="Never" %>

@@ -1,0 +1,59 @@
+﻿{ZL.Source id="校园代理数据源标签"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{SField sid="校园代理数据源标签" FD="Title" page="0"/}</title>
+<link href="../style/global.css" rel="stylesheet" type="text/css" />
+<link href="{$CssDir/}global.css" rel="stylesheet" type="text/css" />
+<meta name="Keywords" content="{SField sid="校园代理数据源标签" FD="Tagkey" page="0"/}">
+<style type="text/css">
+#nav .i{SField sid="校园代理数据源标签" FD="FirstNodeID" page="0"/}{background:url({$CssDir/}images/nav_li.gif) bottom no-repeat; width:102px; height:36px;}
+#nav .i{SField sid="校园代理数据源标签" FD="FirstNodeID" page="0"/} a{color:#F00;}
+</style>
+</head>
+<body>
+{ZL.Label id="top"/}
+
+<div id="brea"><p>您的位置：<a href="/">{$SiteName/}</a>>><a href="{ZL:GetNodeLinkUrl({SField sid="校园代理数据源标签" FD="NodeID" page="0"/})/}">{ZL.Label id="输出指定ID节点名" NodeID="{SField sid="校园代理数据源标签" FD="NodeID" page="0"/}" /}</a>>>{SField sid="校园代理数据源标签" FD="Title" page="0"/}</p></div>
+
+<div id="zhi">
+<div id="zhi_l">
+
+<img src="UploadFiles/{SField sid="校园代理数据源标签" FD="suot" page="0"/}">
+<p>
+<strong>{SField sid="校园代理数据源标签" FD="Title" page="0"/}</strong><br>
+学院名称：{SField sid="校园代理数据源标签" FD="xymc" page="0"/}<br>
+代理人姓名：{SField sid="校园代理数据源标签" FD="xingm" page="0"/}<br>
+联系电话：{SField sid="校园代理数据源标签" FD="lxdh" page="0"/}<br>
+邮箱：{SField sid="校园代理数据源标签" FD="youxiang" page="0"/}<br>
+QQ：{SField sid="校园代理数据源标签" FD="qqhao" page="0"/}<br>
+优惠价：￥{SField sid="校园代理数据源标签" FD="low" page="0"/}<br>
+信誉度：满意{ZL.Label id="统计信誉度" xyd="满意" GenID="{$GetRequest(ItemID)$}" /}人 &nbsp; 一般{ZL.Label id="统计信誉度" xyd="一般" GenID="{$GetRequest(ItemID)$}" /}人 &nbsp; 不满意{ZL.Label id="统计信誉度" xyd="不满意" GenID="{$GetRequest(ItemID)$}" /}人
+
+</p>
+<div class="clear"></div>
+
+      <div id="kcxq_tit">优惠信息 </div>
+
+{SField sid="校园代理数据源标签" FD="youhui" page="0"/}<br>
+<div id="dlpj">
+{ZL.Label id="代理评价调用标签"/}</div>
+{Pub.DLPJ/}
+
+</div>
+<div id="zhi_r">
+<div id="zh_k">
+<div id="zhi_rtit">最新代理</div>
+<ul>
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="8" TitleNum="40" ShowNum="10" /}
+</ul>
+</div>
+
+</div>
+<div class="clear"></div>
+</div>
+
+{ZL.Label id="bottom"/}
+</body>
+</html>

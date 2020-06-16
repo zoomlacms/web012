@@ -1,0 +1,86 @@
+﻿{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}_栏目列表</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+<link href="{$CssDir/}global.css" rel="stylesheet" type="text/css" />
+<link href="../style/global.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+
+#nav .i4{background:url({$CssDir/}images/nav_li.gif) bottom no-repeat; width:102px; height:36px;}
+#nav .i4 a{color:#F00;}
+</style>
+</head>
+<body>
+{ZL.Label id="top"/}
+<div id="brea"><p>您的位置：<a href="/">{$SiteName/}</a>>>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}</p></div>
+
+<div id="school">
+<div id="school_l">
+<div id="spor">
+<div class="school_ltit"><span><a href="{ZL:GetNodeLinkUrl(9)/}">更多>></a></span>推荐资讯</div>
+<div id="zhuan">
+
+{ZL.Label id="推荐文章_标题列表" ShowNum="10" TitleNum="60" NodeID="3" /}
+</div>
+</div>
+<div id="shangc">
+<div class="school_ltit"><span><a href="{ZL:GetNodeLinkUrl(10)/}">更多>></a></span>公务员</div>
+
+{ZL.Label id="输出指定节点标题_带时间属性" NodeID="10" TitleNum="80" ShowNum="10" /}
+</div>
+
+<div id="kaoy">
+<div class="school_ltit"><span><a href="{ZL:GetNodeLinkUrl(11)/}">更多>></a></span>考研培训</div>
+{ZL.Label id="输出指定节点标题_带时间属性" NodeID="11" TitleNum="80" ShowNum="10" /}
+</div>
+
+<div id="jiuye">
+<div class="school_ltit"><span><a href="{ZL:GetNodeLinkUrl(19)/}">更多>></a></span>就业</div>
+{ZL.Label id="输出指定节点标题_带时间属性" NodeID="19" TitleNum="80" ShowNum="10" /}
+
+</div>
+
+<div id="chuguo">
+<div class="school_ltit"><span><a href="{ZL:GetNodeLinkUrl(20)/}">更多>></a></span>出国留学</div>
+{ZL.Label id="输出指定节点标题_带时间属性" NodeID="20" TitleNum="80" ShowNum="10" /}
+
+</div>
+
+</div>
+
+<div id="school_r">
+<script type="text/javascript" src="{$AdDir/}/201107/1.js"></script>
+<div id="niu">
+<div id="niu_tit"> 校园轶事</div>
+<div id="niu_box">
+<ul>
+
+{ZL.Label id="文章缩略图_标题通用" NodeID="12" ShowNum="2" TitleNum="20" /}
+<div class="clear"></div>
+</ul>
+</div>
+<div class="clear"></div>
+
+<div id="niu_sp">
+<ul>
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="13" TitleNum="40" ShowNum="10" /}
+
+
+
+</ul>
+
+</div>
+
+</div>
+</div>
+<div class="clear"></div>
+</div>
+
+
+{ZL.Label id="bottom"/}
+</body>
+</html>

@@ -1,0 +1,65 @@
+﻿*{padding: 0px;margin: 0px;}
+body{font-size:12px;}
+#Indexbody{background: url(Images/topbg1.jpg) #fff repeat-x left top;padding: 0px;margin: 0px;}
+a:link, a:visited{color: #000;text-decoration: none;}
+a:active, a:hover{color: #000;text-decoration: underline;}
+ul{list-style-type: none;}
+
+/* 顶部左侧LOGO样式定义 */
+#content{background: url(Images/logo.jpg) no-repeat left top;width:100%;float:left; height:29px;padding: 74px 0px 0px 0px;}
+#ChannelMenuItems, #ChannelMenuItems li{height: 30px;overflow: hidden;cursor:pointer;}
+#ChannelMenuItems{margin: -30px 0px 3px 200px;}
+#ChannelMenuItems li{margin-top: 0px;padding-top:6px;display:block;	float:left;cursor:pointer;width:80px;text-align:center;vertical-align:middle;font: 12px "宋体";}
+.Main_1{background:url(images/top_bg3m.gif) no-repeat;color:#fff;}
+.Main_2{font-weight:bold;color:#FFFFFF;	background:url(images/top_mouseon.gif) no-repeat;}
+.digitaltext{color: #fff;}
+.segtext{color: #1e860b;}
+
+/* 顶部横向子菜单样式定义 */
+#SubMenu{color: #1e860b;text-align: left;height: 25px;line-height: 25px;margin-left: 5px;}
+#SubMenu li{font-size:12px;	float: left;line-height: 25px;background: url(Images/tree_list.gif) no-repeat left center;padding-left: 16px;padding-right: 8px;}
+#SubMenu li a{color: #FFFFFF;display: block;line-height: 25px;}
+
+/* 顶部右侧链接样式定义 */
+#Announce{position: absolute;top: 3px;right: 5px;color: #FFFF99;font: 12px "宋体";text-decoration: none;}
+#Announce a{height:auto;line-height:20px;width:auto;margin:5px;color:#FFFF99;}
+#Announce a:link, #Announce a:visited{color: #FFFF99;}
+#Announce a:active, #Announce a:hover{color: #c00;}
+
+/* 菜单样式 */
+.menuskin {	background-image:url('/Images/menubg.gif');	background-repeat: repeat-y;	background-color: #FFFFFF;	position: absolute;	visibility:hidden;	z-index:1;	border: 1px solid #8EC1EE;}
+.menuskin div {	margin: 2px;	font-size:9pt;	line-height:14pt;}
+.menuitems {padding-right: 1px;	padding-top: 2px;padding-left: 1px;	padding-bottom: 2px;}
+.mouseoverstyle {padding-right: 0px;padding-top: 1px;padding-left: 0px;	padding-bottom: 1px;border: 1px solid #8EC1EE;background: #E8F4FF;}
+.menuskin A {padding-right:10px;padding-left:20px;}
+
+#help_Label{ cursor:pointer;}/*help's hand*/
+.C_input{background: url(images/input_bg.gif) repeat-x scroll center;margin: 2px;_margin: 2px;overflow: visible;border: 1px solid #8EC1EE;cursor: pointer;
+    padding-top:3px;_padding-top:0px;
+    padding-left: 13px;_padding-left: 13px;
+    padding-right: 14px;_padding-right: 14px;
+    padding-bottom: 3px;_padding-bottom:0px;
+    height: 24px;
+}
+.C_input:hover{	background: url(images/input_hover.gif) repeat-x scroll center;	border: 1px solid #8EC1EE; font-size:12px;}
+.l_input{  height:18px;line-height:18px;border:1px solid #8EC1EE;  font-size:12px;
+}
+.tblModelFiled{}
+
+.tblModelFiled input[type=text] 
+{
+    height:18px;line-height:18px;border:1px solid #8EC1EE;  font-size:12px;
+}
+
+
+.x_input{ border:1px solid #8EC1EE; font-size:12px; }
+.l_input:hover,.x_input:hover{background:#E8F4FF; font-size:12px;}
+
+#login li{ height:26px; line-height:26px;}
+.horizontal li{ float:left}
+#logged li{ margin-right:5px;}
+
+/*文本框修改样式*/
+.text_blur{text-align:center; height:18px;width:80px;line-height:18px;border:1px solid Transparent; background-color:Transparent;  font-size:12px;}
+.text_blur:hover{background-color:#FFFFFF;border:1px solid #8DC2EE;}
+.text_focus{text-align:center;  height:18px;width:80px;line-height:18px;border:1px solid Transparent; background-color:Transparent;  font-size:12px;background-color:#FFFFFF;border:1px solid #8DC2EE;}

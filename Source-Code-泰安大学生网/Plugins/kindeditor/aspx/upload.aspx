@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="kindeditor_aspx_upload, App_Web_fujt3dip" enableEventValidation="false" viewStateEncryptionMode="Never" %>

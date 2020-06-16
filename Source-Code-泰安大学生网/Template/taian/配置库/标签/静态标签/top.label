@@ -1,0 +1,46 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>93</LabelID>
+    <LabelName>top</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;div id="top"&gt;
+&lt;div id="logo"&gt;&lt;a href="/"&gt;&lt;img src="{$CssDir/}images/logo.gif" alt="" /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;p&gt;
+&lt;a onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('');" href="{$SiteURL/}"&gt;设为首页&lt;/a&gt;
+&lt;a href="javascript:window.external.addFavorite('{$SiteURL/}','{$SiteName/}');"&gt;加入收藏&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;!--top end --&gt;
+
+&lt;div id="nav"&gt;
+&lt;ul&gt;
+&lt;li class="i0"&gt;&lt;a href="/"&gt;首页&lt;/a&gt;&lt;/li&gt;
+&lt;li class="i1"&gt;&lt;a href="{ZL:GetNodeLinkUrl(1)/}"&gt;校园代理&lt;/a&gt;&lt;/li&gt;
+&lt;li class="i2"&gt;&lt;a href="{ZL:GetNodeLinkUrl(2)/}"&gt;自主消费&lt;/a&gt;&lt;/li&gt;
+&lt;li class="i3"&gt;&lt;a href="{ZL:GetNodeLinkUrl(3)/}"&gt;学习联盟&lt;/a&gt;&lt;/li&gt;
+&lt;li class="i5"&gt;&lt;a href="{ZL.Label id="论坛地址"/}"&gt;论坛交流&lt;/a&gt;&lt;/li&gt;
+&lt;li class="390"&gt;&lt;a href="{ZL:GetInfoUrl(390)/}"&gt;联系我们&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;!--nav end --&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

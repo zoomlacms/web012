@@ -1,0 +1,7 @@
+﻿a { color: #000; text-decoration: none; border: 0; background-color: transparent; }
+a:hover {color:red; text-decoration: none; }
+a:active, a:focus {  text-decoration: none;color:#000;  }
+a.selected { background: #2266BB; color:#000; text-decoration: none; }
+a:visited { color:#000;}
+.us_Nav{ border:1px solid #C6E3F7; margin-top:5px; margin-bottom:10px; height:auto; background: #E6f2f8; width:100%;}
+.us_Nav li { line-height:28px; float:left;background: #E6f2f8; }

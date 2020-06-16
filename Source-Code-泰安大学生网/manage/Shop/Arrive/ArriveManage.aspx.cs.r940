@@ -1,0 +1,308 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using ZoomLa.Model;
+using ZoomLa.BLL;
+using ZoomLa.Common;
+using System.Data;
+
+public partial class manage_Shop_Arrive_ArriveManage : System.Web.UI.Page
+{
+    B_Arrive barrive = new B_Arrive();
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            Bind();
+        }
+    }
+
+    #region private function
+    private void Bind()
+    {
+        int CPage;
+        int temppage;
+
+        if (Request.Form["DropDownList1"] != null)
+        {
+            temppage = DataConverter.CLng(Request.Form["DropDownList1"]);
+        }
+        else
+        {
+            temppage = DataConverter.CLng(Request.QueryString["CurrentPage"]);
+        }
+
+        if (temppage == null)
+        {
+            CPage = 0;
+        }
+        else
+        {
+            CPage = temppage;
+        }
+
+        if (CPage <= 0)
+        {
+            CPage = 1;
+        }
+        string name = "";
+        string ageinTime = "";
+        string endTime = "";
+
+        #region find condition
+        if (!string.IsNullOrEmpty(Request.QueryString["txtName"]))
+        {
+            name = Request.QueryString["txtName"];
+        }
+        else
+        {
+            name = Request.Form["txtName"];
+        }
+
+        if (!string.IsNullOrEmpty(Request.QueryString["txtCreateTime"]))
+        {
+            ageinTime = Request.QueryString["txtCreateTime"];
+        }
+        else
+        {
+            ageinTime = Request.Form["txtCreateTime"];
+        }
+
+        if (!string.IsNullOrEmpty(Request.QueryString["txtEndTime"]))
+        {
+            endTime = Request.QueryString["txtEndTime"];
+        }
+        else
+        {
+            endTime = Request.Form["txtEndTime"];
+        }
+        #endregion
+        List<M_Arrive> arrives = barrive.GetArriveBynameAndTime(name,ageinTime,endTime);
+        if (arrives != null && arrives.Count > 0)
+        {
+            this.nocontent.Style["display"] = "none";
+            this.gvCard.Visible = true;
+        }
+        else
+        {
+            this.nocontent.Style["display"] = "";
+            this.gvCard.Visible = false;
+        }
+
+        PagedDataSource dd = new PagedDataSource();
+        dd.DataSource = arrives;
+        if (Request.QueryString["txtPage"] != null && Request.QueryString["txtPage"] != "")
+        {
+            dd.PageSize = DataConverter.CLng(Request.QueryString["txtPage"]);
+        }
+        if (Request.Form["txtPage"] != null && Request.Form["txtPage"] != "")
+        {
+            dd.PageSize = DataConverter.CLng(Request.Form["txtPage"]);
+        }
+        dd.AllowPaging = true;
+        dd.CurrentPageIndex = CPage - 1;
+        gvCard.PageSize = dd.PageSize;
+        if (arrives != null && dd.PageSize >= arrives.Count)
+        {
+            dd.CurrentPageIndex = 0;
+            CPage = 1;
+        }
+        this.gvCard.DataSource = dd;
+        this.gvCard.DataBind();
+
+        if (arrives != null && arrives.Count > 0)
+        {
+            Allnum.Text = arrives.Count.ToString();
+        }
+        else
+        {
+            Allnum.Text = "0";
+        }
+        int thispagenull = dd.PageCount;//总页数
+        int CurrentPage = dd.CurrentPageIndex;
+        int nextpagenum = CPage - 1;//上一页
+        int downpagenum = CPage + 1;//下一页
+        int Endpagenum = thispagenull;
+        if (thispagenull <= CPage)
+        {
+            downpagenum = thispagenull;
+            Downpage.Enabled = false;
+        }
+        else
+        {
+            Downpage.Enabled = true;
+        }
+        if (nextpagenum <= 0)
+        {
+            nextpagenum = 0;
+            Nextpage.Enabled = false;
+        }
+        else
+        {
+            Nextpage.Enabled = true;
+        }
+        txtPage.Text = dd.PageSize.ToString();
+        Toppage.Text = "<a href=?txtPage=" + txtPage.Text + "&txtName=" + Request.QueryString["txtName"] + "&txtEndTime=" + Request.QueryString["txtEndTime"] + "&txtCreateTime=" + Request.QueryString["txtCreateTime"] + "&Currentpage=0>首页</a>";
+        Nextpage.Text = "<a href=?txtPage=" + txtPage.Text + "&txtName=" + Request.QueryString["txtName"] + "&txtEndTime=" + Request.QueryString["txtEndTime"] + "&txtCreateTime=" + Request.QueryString["txtCreateTime"] + "&Currentpage=" + nextpagenum.ToString() + ">上一页</a>";
+        Downpage.Text = "<a href=?txtPage=" + txtPage.Text + "&txtName=" + Request.QueryString["txtName"] + "&txtEndTime=" + Request.QueryString["txtEndTime"] + "&txtCreateTime=" + Request.QueryString["txtCreateTime"] + "&Currentpage=" + downpagenum.ToString() + ">下一页</a>";
+        Endpage.Text = "<a href=?txtPage=" + txtPage.Text + "&txtName=" + Request.QueryString["txtName"] + "&txtEndTime=" + Request.QueryString["txtEndTime"] + "&txtCreateTime=" + Request.QueryString["txtCreateTime"] + "&Currentpage=" + Endpagenum.ToString() + ">尾页</a>";
+        PageSize.Text = thispagenull.ToString();
+        Nowpage.Text = CPage.ToString();
+        DropDownList1.Items.Clear();
+        for (int i = 1; i <= thispagenull; i++)
+        {
+            DropDownList1.Items.Add(i.ToString());
+        }
+        for (int j = 0; j < DropDownList1.Items.Count; j++)
+        {
+            if (DropDownList1.Items[j].Value == Nowpage.Text)
+            {
+                DropDownList1.SelectedValue = Nowpage.Text;
+                break;
+            }
+        }
+
+    }
+    #endregion
+
+    //批量删除
+    protected void BtnDelete_Click(object sender, EventArgs e)
+    {
+        int Ids = 0;
+        bool resl = true;
+        for (int i = 0; i <= gvCard.Rows.Count - 1; i++)
+        {
+            CheckBox cbox = (CheckBox)gvCard.Rows[i].FindControl("chkSel");
+            if (cbox.Checked == true)
+            {
+                Ids = DataConverter.CLng((gvCard.Rows[i].FindControl("hfId1") as HiddenField).Value);
+                bool res = barrive.GetDelete(Ids);
+                if (!res)
+                {
+                    resl = false;
+                }
+            }
+        }
+        if (!resl)
+        {
+            Response.Write("<script>alert('删除失败，请重新选择！')</script>");
+            Bind();
+        }
+        else
+        {
+            Response.Write("<script>alert('删除成功!')</script>");
+            Bind();
+        }
+
+        CheckSelectAll.Checked = false;
+    }
+    public string GetUseTime(string usetime)
+    {
+        if (usetime == DateTime.Now.ToString())
+        {
+            return "----";
+        }
+        else
+        {
+            string[] a = usetime.Split(' ');
+            string[] b = a[0].Split('/');
+            string temp = "";
+            for (int i = 0; i < b.Length; i++)
+            {
+                temp += b[i] + "-";
+            }
+            return temp.Substring(0, temp.Length - 1);
+        }
+    }
+
+    //分页
+    protected void txtPage_TextChanged(object sender, EventArgs e)
+    {
+        ViewState["page"] = "1";
+        Bind();
+    }
+    
+    //命令
+    protected void gvCard_RowCommand(object sender, GridViewCommandEventArgs e)
+    {
+        if (e.CommandName == "Upd")
+        {
+            Response.Redirect("AddArrive.aspx?menu=update&id="+e.CommandArgument);
+        }
+        if (e.CommandName == "Del")
+        {
+            int id = DataConverter.CLng(e.CommandArgument);
+            bool res = barrive.GetDelete(id);
+            if (res)
+            {
+                CheckSelectAll.Checked = false;
+                Response.Write("<script>alert('删除成功!')</script>");
+                Bind();
+            }
+            else
+            {
+                Response.Write("<script>alert('删除失败!')</script>");
+            }
+        }
+    }
+
+    //行绑定
+    protected void gvCard_RowDataBound(object sender, GridViewRowEventArgs e)
+    {
+        if (e.Row.RowType == DataControlRowType.DataRow)
+        {
+            HiddenField hfId1 = e.Row.FindControl("hfId1") as HiddenField;
+            Label lblUserId = e.Row.FindControl("lblUser") as Label;
+            Label lblState = e.Row.FindControl("lblState") as Label;
+            Label lblJihuo = e.Row.FindControl("lblJihuo") as Label;
+            int id = DataConverter.CLng(hfId1.Value);
+            M_Arrive arrive = barrive.GetArriveById(id);
+            if (arrive != null && arrive.Id > 0)
+            {
+                lblState.Text = arrive.State == 0 ? "未使用" : "已使用";
+                int userid = arrive.UserID;
+                B_User user = new B_User();
+                M_UserInfo userinfo = user.GetUserByUserID(userid);
+                if (userinfo != null && userinfo.UserID > 0)
+                {
+                    lblUserId.Text = userinfo.UserName;
+                }
+                else
+                {
+                    lblUserId.Text = "未送出";
+                }
+            }
+        }
+    }
+    protected void CheckSelectAll_CheckedChanged(object sender, EventArgs e)
+    {
+        for (int i = 0; i < gvCard.Rows.Count; i++)
+        {
+            CheckBox cbox = (CheckBox)gvCard.Rows[i].FindControl("chkSel");
+            if (CheckSelectAll.Checked == true)
+            {
+                cbox.Checked = true;
+            }
+            else
+            {
+                cbox.Checked = false;
+            }
+        }
+    }
+
+    //搜索
+    protected void btnName_Click(object sender, EventArgs e)
+    {
+        Bind();
+    }
+
+    //清空
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        txtName.Text = "";
+        txtCreateTime.Text = "";
+        txtEndTime.Text = "";
+    }
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<Styles>
+  <forum Name="a">
+    <div class="mainbox list">
+      <span class="headactions">
+        <img id="category_1_img" src="Themes/default/collapsed_no.gif" title="收起/展开" alt="收起/展开" onclick="toggle_collapse('category_1');" />
+      </span>
+      <h3>
+        <a href="Default.aspx?gid={Groupid}" style="">{GroupName}</a>
+      </h3>
+      <table id="category_{Groupid}" cellspacing="0" summary="category{Groupid}" cellpadding="0">
+        <Xtemp>
+          <tbody id="forum{Groupid}">
+            <tr class="narrowlist">
+              <template>
+                <th class="new" width="{forumwidth}">
+                  <h2>
+                    <a href="ShowForum.aspx?fid={forumid}"  style="">{forumname}</a>
+                    <em>
+                      (今日: <strong>{TodayPosts}</strong>)
+                    </em>
+                  </h2>
+                  <p>主题: {TotalThreads}, 帖数: {TotalPosts}</p>
+                  <p>
+                    最后发表:
+                    <a href="redirect.aspx?tid={MostRecentThreadID}&amp;goto=lastpost#lastpost" title="{MostRecentPostSubject}">
+                      <span title="{MostRecentPostDate}">{DayDiff}</span>
+                    </a>
+                  </p>
+                </th>
+              </template>
+            </tr>
+          </tbody>
+        </Xtemp>
+      </table>
+    </div>
+  </forum>
+  <forum Name="b">
+    <div class="mainbox list">
+      <span class="headactions">
+        <img id="category_1_img" src="Themes/default/collapsed_no.gif" title="收起/展开" alt="收起/展开" onclick="toggle_collapse('category_1');" />
+      </span>
+      <h3>
+        <a href="Default.aspx?gid={Groupid}" style="">{GroupName}</a>
+      </h3>
+      <Xtemp>
+        <table id="category_{Groupid}" cellspacing="0" summary="category{Groupid}" cellpadding="0">
+          <template>
+            <tbody id="forum{forumid}">
+              <tr>
+                <th>
+                  <div class="left">
+                    <h2>
+                      <a href="ShowForum.aspx?fid={forumid}"  style="">{forumname}</a>
+                    </h2>
+                    {ForumDescription}
+                    {Moderated}
+                  </div>
+                </th>
+                <td class="forumnums">
+                  <em>{TotalThreads}</em> / {TotalPosts}
+                </td>
+                <td class="forumlast">
+                  <p>
+                    <a href="ShowPost.aspx?tid={MostRecentThreadID}&amp;goto=lastpost#lastpost">{MostRecentPostSubject}</a>
+                  </p>
+                  <cite>
+                    <a href="space.aspx?username={MostRecentPostAuthor}">{MostRecentPostAuthor}</a> - <span title="{MostRecentPostDate}">{DayDiff}</span>
+                  </cite>
+                </td>
+              </tr>
+            </tbody>
+          </template>
+        </table>
+      </Xtemp>
+    </div>
+  </forum>
+</Styles>

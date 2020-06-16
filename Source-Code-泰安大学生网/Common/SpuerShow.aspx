@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="SpuerShow, App_Web_33xyjpeu" enableEventValidation="false" viewStateEncryptionMode="Never" %>

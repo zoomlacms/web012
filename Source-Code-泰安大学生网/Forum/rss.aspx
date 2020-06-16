@@ -1,0 +1,1 @@
+﻿<%@ page language="C#" autoeventwireup="true" inherits="Forum_rss, App_Web_knp4v2m5" enableEventValidation="false" viewStateEncryptionMode="Never" %>

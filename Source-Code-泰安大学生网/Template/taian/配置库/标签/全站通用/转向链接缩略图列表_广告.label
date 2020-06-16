@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>393</LabelID>
+    <LabelName>转向链接缩略图列表_广告</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>全站通用</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,22,1,参数说明|ShowNum,30,1,参数说明</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_CommonModel left join {table1}.dbo.ZL_C_RedirectLink on {table1}.dbo.ZL_CommonModel.ItemID={table1}.dbo.ZL_C_RedirectLink.ID</LabelTable>
+    <LabelField>{table1}.dbo.ZL_C_RedirectLink.ggtp,{table1}.dbo.ZL_C_RedirectLink.RedirectLink</LabelField>
+    <LabelWhere>{table1}.dbo.ZL_CommonModel.NodeID=@NodeID</LabelWhere>
+    <LabelOrder />
+    <LabelContent>{Repeate}
+&lt;a href="{Field="RedirectLink"/}"&gt;&lt;img src="{ZL:GetPicUrl({Field="ggtp"/})/}"&gt;&lt;/a&gt;
+
+{/Repeate}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

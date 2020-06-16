@@ -1,0 +1,61 @@
+{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_欢迎访问泰安大学生网</title>
+<link href="../style/global.css" rel="stylesheet" type="text/css" />
+<link href="{$CssDir/}global.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#nav .i1{background:url({$CssDir/}images/nav_li.gif) bottom no-repeat; width:102px; height:36px;}
+#nav .i1 a{color:#F00;}
+</style>
+</head>
+<body>
+{ZL.Label id="top"/}
+<div id="brea"><p>您的位置：<a href="/">{$SiteName/}</a>>>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}</p></div>
+
+<div id="gang">
+<div id="gang_l">
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=*&v=1.0&services=true" ></script>
+<div style="width:650px;height:480px;border:1px solid gary;margin-top:2px;" id="container"></div>   
+   <script type="text/javascript">   
+   var map = new BMap.Map("container"); 
+   map.centerAndZoom(new BMap.Point(117.139456,36.205552), 17); 
+   map.addControl(new BMap.NavigationControl());   
+   map.addControl(new BMap.ScaleControl());   
+   map.addControl(new BMap.OverviewMapControl()); 
+   var local = new BMap.LocalSearch(map, { 
+   renderOptions:{map: map} 
+   }); 
+   local.search("山东科技大学"); 
+   </script>
+</div>
+<div id="gang_r">
+{ZL.Label id="转向链接缩略图列表_广告" NodeID="22" ShowNum="30" /}
+</div>
+<div class="clear"></div>
+</div>
+
+
+<div id="bottom">
+<ul>
+<li ><a href="{ZL:GetInfoUrl(396)/}">版权声明</a></li>
+<li>|</li>
+<li><a href="{ZL:GetInfoUrl(397)/}">刊登广告</a></li>
+<li>|</li>
+<li><a href="{ZL:GetInfoUrl(398)/}">使用说明</a></li>
+<li>|</li>
+<li><a href="{ZL:GetNodeLinkUrl(18)/}">友情链接</a></li>
+<li>|</li>
+<li><a href="{ZL.Label id="论坛地址"/}">论坛交流</a></li>
+<li>|</li>
+<li><a href="{ZL:GetInfoUrl(390)/}">联系我们</a></li>
+</ul>
+<div class="clear"></div>
+<p>Copyright &copy;  2011 泰安大学生网  版权所有<br />
+技术支持：<a href="http://www.hx008.com" target="_blank">华夏互联hx008.com</a>
+</p>
+</div>
+</body>
+</html>

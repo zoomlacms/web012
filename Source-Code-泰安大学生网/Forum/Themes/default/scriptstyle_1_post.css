@@ -1,0 +1,516 @@
+.editorcontent {
+	BACKGROUND: #f1f5fa
+}
+.editorcontent A {
+	COLOR: #09c
+}
+.editorcontent .btnbar {
+	POSITION: relative
+}
+#custominfoarea {
+	RIGHT: 10px; LEFT: auto
+}
+#e_iframe {
+	BORDER-BOTTOM-STYLE: none; PADDING-BOTTOM: 0px; BORDER-RIGHT-STYLE: none; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none; PADDING-TOP: 0px
+}
+#e_textarea {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.specialpost {
+	MARGIN: 15px 0px; OVERFLOW: hidden
+}
+.specialinfo {
+	WIDTH: 400px; PADDING-RIGHT: 14px; FLOAT: left; BORDER-RIGHT: #ccc 1px dashed
+}
+.specialpost P {
+	PADDING-BOTTOM: 2px; LINE-HEIGHT: 30px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; HEIGHT: 30px; PADDING-TOP: 2px
+}
+.specialinfo TEXTAREA {
+	WIDTH: 360px; HEIGHT: 80px
+}
+.optionnum {
+	WIDTH: 16px; FLOAT: left; MARGIN-RIGHT: 6px
+}
+.optioninfo {
+	WIDTH: 16px; FLOAT: left; MARGIN-RIGHT: 6px
+}
+.optioninfo {
+	WIDTH: 300px
+}
+.specialinfo DL {
+	MARGIN: 5px 0px
+}
+.specialaddons DL {
+	MARGIN: 5px 0px
+}
+.specialinfo DL DT {
+	WIDTH: 62px; FLOAT: left; CLEAR: left; FONT-WEIGHT: 700
+}
+.specialaddons DL DT {
+	WIDTH: 62px; FLOAT: left; CLEAR: left; FONT-WEIGHT: 700
+}
+.specialaddons DL DT {
+	FONT-WEIGHT: 400
+}
+.specialinfo DL DD {
+	MARGIN: 5px 0px 15px 65px
+}
+.specialaddons DL DD {
+	MARGIN: 5px 0px 15px 65px
+}
+.specialinfo DL DD STRONG {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; PADDING-TOP: 0px
+}
+.specialinfo .float_postinfo {
+	HEIGHT: 22px
+}
+.specialinfo .float_typeid {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 6px
+}
+.specialaddons {
+	WIDTH: 170px; FLOAT: left; MARGIN-LEFT: 10px; OVERFLOW: hidden
+}
+.spaoptlist P {
+	LINE-HEIGHT: 20px; HEIGHT: 20px
+}
+.spaoptlist INPUT[type=radio] {
+	MARGIN: 0px 3px 0px 0px
+}
+.spslonginput {
+	WIDTH: 280px
+}
+.splonginput {
+	WIDTH: 150px
+}
+.spmediuminput {
+	WIDTH: 90px
+}
+.specialaddons SELECT.spmediuminput {
+	WIDTH: 96px
+}
+.spshortinput {
+	WIDTH: 30px
+}
+.sppoll P {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; HEIGHT: auto; CLEAR: both; PADDING-TOP: 1px
+}
+.goodsimg {
+	BORDER-BOTTOM: #aaa 1px solid; BORDER-LEFT: #aaa 1px solid; MARGIN: 0px 10px 0px 0px; WIDTH: 200px; BORDER-TOP: #aaa 1px solid; BORDER-RIGHT: #aaa 1px solid
+}
+.classifieds {
+	MARGIN: 10px 0px
+}
+.classifieds .formtable TH {
+	WIDTH: 70px; VERTICAL-ALIGN: top
+}
+.classifieds .txt {
+	WIDTH: 600px
+}
+.classifieds .txtarea {
+	WIDTH: 600px; HEIGHT: 58px
+}
+.classifieds .inlinelist {
+	WIDTH: 610px; FLOAT: left
+}
+.classifieds .inlinelist LI {
+	WIDTH: 33%; MARGIN-BOTTOM: 5px; FLOAT: left
+}
+.uploadfile {
+	WIDTH: 500px
+}
+* + HTML .uploadfile {
+	WIDTH: 520px
+}
+.post_tablelist {
+	BORDER-BOTTOM-STYLE: none; LINE-HEIGHT: 160%; HEIGHT: auto
+}
+.post_tablelist TABLE {
+	TABLE-LAYOUT: fixed
+}
+.post_tablelist TABLE TD {
+	BORDER-BOTTOM: #f5f5f5 1px solid; LINE-HEIGHT: 28px; HEIGHT: 28px
+}
+.attachnum {
+	WIDTH: 16px
+}
+.attachctrl {
+	WIDTH: 40px
+}
+.attachname {
+	
+}
+.attachname P IMG {
+	HEIGHT: 16px; VERTICAL-ALIGN: middle
+}
+.attachname_swf P IMG {
+	HEIGHT: 16px; VERTICAL-ALIGN: middle
+}
+.attachname .lighttxt {
+	COLOR: #999 !important
+}
+.attachname_swf .lighttxt {
+	COLOR: #999 !important
+}
+.attachview {
+	TEXT-ALIGN: center; WIDTH: 40px
+}
+.attachpr {
+	TEXT-ALIGN: center; WIDTH: 40px
+}
+.attachview .txt {
+	WIDTH: 25px
+}
+.attachpr .txt {
+	WIDTH: 25px
+}
+.attachurl IMG {
+	HEIGHT: 20px !important
+}
+.attachdel {
+	WIDTH: 20px
+}
+* + HTML .attachdel {
+	WIDTH: 40px
+}
+.attachdesc {
+	TEXT-ALIGN: center; WIDTH: 80px
+}
+.attachdesc .txt {
+	WIDTH: 74px
+}
+.upfilelist {
+	OVERFLOW-X: hidden; HEIGHT: auto !important; MAX-HEIGHT: 300px; OVERFLOW: auto
+}
+.upfilelist A {
+	COLOR: #09c
+}
+#attachimglist A {
+	COLOR: #09c
+}
+#uch_albums A {
+	COLOR: #09c
+}
+.uploadinfo {
+	WHITE-SPACE: normal
+}
+.uploadblock {
+	BORDER-BOTTOM: #e3edf5 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #e3edf5 1px solid; PADDING-BOTTOM: 8px; BACKGROUND-COLOR: #ebf2f8; MARGIN: 8px 0px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; BORDER-TOP: #e3edf5 1px solid; BORDER-RIGHT: #e3edf5 1px solid; PADDING-TOP: 8px
+}
+.filedata {
+	MARGIN-BOTTOM: 8px
+}
+.popupmenu_popup .float_ctrl {
+	POSITION: absolute; TOP: 13px; RIGHT: 10px
+}
+.floatboxswf {
+	BORDER-BOTTOM: #ccc 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #ccc 1px solid; MARGIN: 15px auto; WIDTH: 470px; HEIGHT: 268px; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid
+}
+.fontname_menu {
+	WIDTH: 97px
+}
+.fontsize_menu {
+	LINE-HEIGHT: normal; WIDTH: 27px
+}
+.fontsize_menu UL LI {
+	LINE-HEIGHT: normal
+}
+.fontname_menu LI {
+	CURSOR: pointer
+}
+.fontsize_menu LI {
+	CURSOR: pointer
+}
+.simple_menu LI {
+	CURSOR: pointer
+}
+.editor_colornormal {
+	BORDER-BOTTOM-STYLE: none !important; PADDING-BOTTOM: 2px !important; BORDER-RIGHT-STYLE: none !important; PADDING-LEFT: 2px !important; PADDING-RIGHT: 2px !important; BORDER-TOP-STYLE: none !important; BORDER-LEFT-STYLE: none !important; PADDING-TOP: 2px !important
+}
+.editor_colorhover {
+	BORDER-BOTTOM-STYLE: none !important; PADDING-BOTTOM: 2px !important; BORDER-RIGHT-STYLE: none !important; PADDING-LEFT: 2px !important; PADDING-RIGHT: 2px !important; BORDER-TOP-STYLE: none !important; BORDER-LEFT-STYLE: none !important; PADDING-TOP: 2px !important
+}
+.editor_colornormal DIV {
+	BORDER-BOTTOM: #fff 1px solid; BORDER-LEFT: #fff 1px solid; WIDTH: 10px; HEIGHT: 10px; OVERFLOW: hidden; BORDER-TOP: #fff 1px solid; CURSOR: pointer; BORDER-RIGHT: #fff 1px solid
+}
+.editor_colorhover DIV {
+	BORDER-BOTTOM: #444 1px solid; BORDER-LEFT: #444 1px solid; WIDTH: 10px; HEIGHT: 10px; OVERFLOW: hidden; BORDER-TOP: #444 1px solid; CURSOR: pointer; BORDER-RIGHT: #444 1px solid
+}
+.imglist {
+	WIDTH: 99.6%; MARGIN-BOTTOM: 5px
+}
+.imglist TD {
+	PADDING-BOTTOM: 8px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 8px
+}
+.imglist IMG {
+	BORDER-BOTTOM: #e6e7e1 1px solid; BORDER-LEFT: #e6e7e1 1px solid; BORDER-TOP: #e6e7e1 1px solid; BORDER-RIGHT: #e6e7e1 1px solid
+}
+.imginfo {
+	MARGIN-RIGHT: 8px
+}
+* HTML .imginfo {
+	MARGIN-RIGHT: 3px
+}
+.imginfo .deloption {
+	MARGIN-TOP: 10px
+}
+.imginfo .txt {
+	WIDTH: 85px
+}
+.imgdeleted {
+	FILTER: alpha(opacity=30); opacity: 0.3
+}
+.extcreditbox {
+	WIDTH: 100%; HEIGHT: 350px; OVERFLOW: auto
+}
+.extname {
+	WIDTH: 100px
+}
+.extcredits {
+	WIDTH: 80px
+}
+.columntype {
+	MARGIN-TOP: 5px
+}
+* HTML .columntype * {
+	FONT-FAMILY: Tahoma,sans-serif
+}
+.posttags STRONG {
+	FONT-WEIGHT: 700
+}
+.columntype STRONG {
+	FONT-WEIGHT: 700
+}
+.posttags P {
+	MARGIN-BOTTOM: 5px
+}
+.columntype P {
+	MARGIN-BOTTOM: 5px
+}
+.columntype .txt {
+	WIDTH: 40px; VERTICAL-ALIGN: middle
+}
+.posttags {
+	WIDTH: 360px
+}
+.posttags .txt {
+	WIDTH: 250px; MARGIN-RIGHT: 8px
+}
+.columntype TABLE {
+	MARGIN: 5px 0px 0px -10px; WIDTH: 85%
+}
+.columntype TD {
+	BORDER-LEFT: #ccc 1px dashed; PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; VERTICAL-ALIGN: top; PADDING-TOP: 0px
+}
+.firstlist {
+	BORDER-BOTTOM-STYLE: none !important; BORDER-RIGHT-STYLE: none !important; BORDER-TOP-STYLE: none !important; BORDER-LEFT-STYLE: none !important
+}
+.editortoolbar TABLE {
+	WIDTH: auto
+}
+.editortoolbar A {
+	DISPLAY: block; CURSOR: pointer
+}
+.editortoolbar .a {
+	DISPLAY: block; CURSOR: pointer
+}
+.editortoolbar A.hover {
+	TEXT-DECORATION: none
+}
+.editortoolbar A:hover {
+	TEXT-DECORATION: none
+}
+.editortoolbar .a1 {
+	TEXT-DECORATION: none
+}
+.editorrow {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #999 1px solid; PADDING-BOTTOM: 3px; LINE-HEIGHT: 18px; MARGIN-TOP: 5px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; BACKGROUND: #f7f7f7; HEIGHT: 48px; CLEAR: both; OVERFLOW: hidden; BORDER-TOP: #999 1px solid; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 3px
+}
+.editor {
+	TEXT-ALIGN: left
+}
+.editorbtn {
+	MARGIN-RIGHT: 50px
+}
+.editor EM {
+	BORDER-BOTTOM: #f7f7f7 1px solid; BORDER-LEFT: #f7f7f7 1px solid; MARGIN: 0px 5px; WIDTH: 3px; DISPLAY: block; BACKGROUND: url(../../images/common/editor.gif) no-repeat 0px -701px; FLOAT: left; HEIGHT: 20px; BORDER-TOP: #f7f7f7 1px solid; BORDER-RIGHT: #f7f7f7 1px solid
+}
+.editor A {
+	BORDER-BOTTOM: #f7f7f7 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #f7f7f7 1px solid; TEXT-INDENT: -9999px; MARGIN: 1px 0px; WIDTH: 20px; DISPLAY: block; BACKGROUND: url(../../images/common/editor.gif) no-repeat 0px 30px; FLOAT: left; HEIGHT: 21px; OVERFLOW: hidden; BORDER-TOP: #f7f7f7 1px solid; BORDER-RIGHT: #f7f7f7 1px solid; TEXT-DECORATION: none
+}
+A.oneditor {
+	BORDER-BOTTOM: #7fcae2 1px solid; BORDER-LEFT: #7fcae2 1px solid; BACKGROUND: url(../../images/common/editor.gif) #fefefe no-repeat 0px 21px; BORDER-TOP: #7fcae2 1px solid; BORDER-RIGHT: #7fcae2 1px solid
+}
+.editor A:hover {
+	BORDER-BOTTOM: #7fcae2 1px solid; BORDER-LEFT: #7fcae2 1px solid; BACKGROUND: url(../../images/common/editor.gif) #fefefe no-repeat 0px 21px; BORDER-TOP: #7fcae2 1px solid; BORDER-RIGHT: #7fcae2 1px solid
+}
+A.editormode {
+	TEXT-ALIGN: right; WIDTH: 50px; BACKGROUND: #f7f7f7; FLOAT: right; RIGHT: 20px; TEXT-DECORATION: none !important
+}
+* HTML A.editormode {
+	RIGHT: 50px
+}
+A.editormode:hover {
+	BORDER-BOTTOM-COLOR: #7fcae2; BORDER-TOP-COLOR: #7fcae2; BACKGROUND: #fefefe; BORDER-RIGHT-COLOR: #7fcae2; BORDER-LEFT-COLOR: #7fcae2
+}
+A.plugeditor {
+	TEXT-INDENT: 0px; BACKGROUND-POSITION: 0px 40px
+}
+.minibtn {
+	PADDING-BOTTOM: 1px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; BACKGROUND: url(../../images/common/editor.gif) no-repeat 0px -286px; FLOAT: left; HEIGHT: 44px; PADDING-TOP: 1px
+}
+.minibtn P {
+	CLEAR: left
+}
+#e_cmd_simple {
+	BACKGROUND-POSITION: 0px 0px
+}
+#e_cmd_bold {
+	FONT-WEIGHT: 700; TEXT-DECORATION: none
+}
+#e_cmd_italic {
+	FONT-STYLE: italic; TEXT-DECORATION: none
+}
+#e_cmd_underline {
+	TEXT-DECORATION: underline
+}
+#e_cmd_strikethrough {
+	TEXT-DECORATION: line-through
+}
+#e_cmd_fontname {
+	BACKGROUND-POSITION: 0px -21px
+}
+#e_cmd_fontsize {
+	BACKGROUND-POSITION: 0px -41px
+}
+#e_cmd_forecolor {
+	BACKGROUND-POSITION: 0px -81px
+}
+#e_cmd_createlink {
+	BACKGROUND-POSITION: 0px -121px
+}
+#e_cmd_paragraph {
+	BACKGROUND-POSITION: 0px -783px
+}
+#e_cmd_table {
+	BACKGROUND-POSITION: 0px -381px
+}
+#e_cmd_list {
+	BACKGROUND-POSITION: 0px -261px
+}
+#e_cmd_hide {
+	BACKGROUND-POSITION: 0px -421px
+}
+#e_cmd_free {
+	BACKGROUND-POSITION: 0px -401px
+}
+#e_cmd_unlink {
+	BACKGROUND-POSITION: 0px -201px
+}
+#e_cmd_removeformat {
+	BACKGROUND-POSITION: 0px -181px
+}
+#e_cmd_undo {
+	BACKGROUND-POSITION: 0px -221px
+}
+#e_cmd_redo {
+	BACKGROUND-POSITION: 0px -241px
+}
+#e_cmd_savedata {
+	BACKGROUND-POSITION: 0px -581px
+}
+#e_cmd_loaddata {
+	BACKGROUND-POSITION: 0px -601px
+}
+#e_cmd_clearcontent {
+	BACKGROUND-POSITION: 0px -101px
+}
+#e_cmd_checklength {
+	BACKGROUND-POSITION: 0px -161px
+}
+.tblbtn_disabled {
+	BACKGROUND-POSITION: 0px -842px
+}
+.hidebtn_disabled {
+	BACKGROUND-POSITION: 0px -863px
+}
+.tblbtn_disabled:hover {
+	BORDER-BOTTOM-COLOR: #f7f7f7 !important; BACKGROUND-COLOR: #f7f7f7 !important; BORDER-TOP-COLOR: #f7f7f7 !important; BORDER-RIGHT-COLOR: #f7f7f7 !important; BORDER-LEFT-COLOR: #f7f7f7 !important; CURSOR: default
+}
+.hidebtn_disabled {
+	BORDER-BOTTOM-COLOR: #f7f7f7 !important; BACKGROUND-COLOR: #f7f7f7 !important; BORDER-TOP-COLOR: #f7f7f7 !important; BORDER-RIGHT-COLOR: #f7f7f7 !important; BORDER-LEFT-COLOR: #f7f7f7 !important; CURSOR: default
+}
+.maxbtn {
+	POSITION: relative; PADDING-BOTTOM: 1px; PADDING-LEFT: 6px; PADDING-RIGHT: 2px; BACKGROUND: url(../../images/common/editor.gif) no-repeat 0px -286px; FLOAT: left; HEIGHT: 44px; PADDING-TOP: 1px
+}
+.maxbtn A {
+	TEXT-ALIGN: center; TEXT-INDENT: 0px; WIDTH: 40px; BACKGROUND: url(../../images/common/bigeditor.gif) no-repeat; HEIGHT: 18px; FONT-SIZE: 12px; PADDING-TOP: 26px
+}
+.maxbtn A.oneditor {
+	BACKGROUND: url(../../images/common/bigeditor.gif) #fefefe no-repeat
+}
+.maxbtn A:hover {
+	BACKGROUND: url(../../images/common/bigeditor.gif) #fefefe no-repeat
+}
+.haspic {
+	POSITION: absolute; TEXT-ALIGN: center; LINE-HEIGHT: 12px; BACKGROUND-COLOR: #bbb; WIDTH: 12px; HEIGHT: 12px; COLOR: #fff; FONT-SIZE: 11px; TOP: 2px; FONT-WEIGHT: 700
+}
+.hasatt {
+	POSITION: absolute; TEXT-ALIGN: center; LINE-HEIGHT: 12px; BACKGROUND-COLOR: #bbb; WIDTH: 12px; HEIGHT: 12px; COLOR: #fff; FONT-SIZE: 11px; TOP: 2px; FONT-WEIGHT: 700
+}
+.haspic {
+	LEFT: 78px
+}
+.hasatt {
+	LEFT: 120px
+}
+#e_cmd_paste {
+	BACKGROUND-POSITION: 4px -315px
+}
+#e_cmd_smilies {
+	BACKGROUND-POSITION: 4px 0px
+}
+#e_cmd_image {
+	BACKGROUND-POSITION: 4px -45px
+}
+#e_cmd_attach {
+	BACKGROUND-POSITION: 4px -360px
+}
+#e_cmd_audio {
+	BACKGROUND-POSITION: 4px -90px
+}
+#e_cmd_video {
+	BACKGROUND-POSITION: 4px -135px
+}
+#e_cmd_flash {
+	BACKGROUND-POSITION: 4px -180px
+}
+#e_cmd_code {
+	BACKGROUND-POSITION: 4px -225px
+}
+#e_cmd_quote {
+	BACKGROUND-POSITION: 4px -270px
+}
+.newediter {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #999 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 4px; PADDING-RIGHT: 0px; BACKGROUND: #fff; BORDER-TOP: #999 0px solid; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 0px
+}
+.newediter .autosave {
+	BORDER-BOTTOM: 1px; BORDER-LEFT: 1px; PADDING-BOTTOM: 0px; PADDING-LEFT: 2px; WIDTH: 562px; PADDING-RIGHT: 2px; BACKGROUND: #fff; HEIGHT: 87px; BORDER-TOP: 1px; BORDER-RIGHT: 1px; PADDING-TOP: 0px
+}
+.newediter .max {
+	HEIGHT: 230px
+}
+A.customedit {
+	TEXT-INDENT: 0px !important
+}
+.popupfix {
+	WHITE-SPACE: nowrap
+}
+* HTML #e_cmd_image_menu {
+	WIDTH: 480px
+}
+.popupmenu_option .txt {
+	MARGIN: 5px 0px
+}
+.popupmenu_option .txtarea {
+	MARGIN: 5px 0px
+}

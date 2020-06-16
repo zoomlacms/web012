@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>384</LabelID>
+    <LabelName>图片标题列表_商场代理</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>代理</LabelCate>
+    <LabelDesc />
+    <LabelParam>ShowNum,8,1,参数说明|NodeID,1,1,参数说明|TitleNum,20,1,参数说明</LabelParam>
+    <LabelTable>{table1}.dbo.ZL_CommonModel left join {table1}.dbo.ZL_C_xydl on {table1}.dbo.ZL_CommonModel.ItemID={table1}.dbo.ZL_C_xydl.ID</LabelTable>
+    <LabelField>{table1}.dbo.ZL_CommonModel.GeneralID,{table1}.dbo.ZL_CommonModel.Title,{table1}.dbo.ZL_C_xydl.low,{table1}.dbo.ZL_C_xydl.suot,{table1}.dbo.ZL_C_xydl.yuan</LabelField>
+    <LabelWhere>{table1}.dbo.ZL_CommonModel.NodeID=@NodeID</LabelWhere>
+    <LabelOrder />
+    <LabelContent>{Repeate}
+&lt;div class="y_box"&gt;
+&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}"&gt;&lt;b&gt;{ZL:CutText({Field="Title"/},@TitleNum,)/}&lt;/b&gt;&lt;/a&gt;
+&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}"&gt;&lt;img src="{ZL:GetPicUrl({Field="suot"/})/}"&gt;&lt;/a&gt;
+ &lt;p&gt;
+&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}"&gt;&lt;img src="{$CssDir/}images/ch.jpg"&gt;&lt;/a&gt;&lt;strong&gt;￥{Field="low"/}&lt;/strong&gt;原价：&lt;del&gt;￥{Field="yuan"/}&lt;/del&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+
+{/Repeate}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+  </Table>
+</NewDataSet>

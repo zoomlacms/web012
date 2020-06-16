@@ -1,0 +1,35 @@
+/* 常用通用样式 */
+h2{font-size:18px;}
+h3{font-size:16px;}
+h4,h5{font-size:14px;}
+h6{font-size:12px;}
+small{font-size:11px;}
+option{padding-left:5px;}
+
+.clear{clear:both;}
+.fl{float:left;}
+.fr{float:right;}
+.hidden{display:none;}
+.show{display:block;}
+.small{font-size:11px;font-family:tahoma, mingliu;}
+.large {font-size:14px;}
+.center{text-align:center;}
+.empty{visibility:hidden;}
+.text,.checkbox,.radiobox{vertical-align:middle;}
+.blank10{clear:both;font-size:1px;height:10px;line-height:1px;}
+/*
+.area1{width:975px;margin:0 auto;}
+.leftWrap .blank10{width:678px;}
+.rightWrap .blank10{width:289px;}
+*/
+
+/* clearFix*/
+.clearfix:after{content: ".";display: block;clear: both;visibility: hidden;line-height:0;height:0;} 
+.clearfix{display: inline-block;}
+html[xmlns] .clearfix{display: block;}
+* html .clearfix{height: 1%;}
+
+.equality{padding-bottom:32767px;margin-bottom:-32767px;} /*列等高*/
+
+/* 搜索结果关键字 */
+i.L{color:#33f;font-style:normal;}

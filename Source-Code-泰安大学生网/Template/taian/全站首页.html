@@ -1,0 +1,156 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>欢迎访问泰安大学生网_山农大创业实践项目</title>
+<link href="{$CssDir/}global.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#nav .i0{background:url({$CssDir/}images/nav_li.gif) bottom no-repeat; width:102px; height:36px;}
+#nav .i0 a{color:#F00;}
+</style>
+</head>
+<body>
+<div id="top">
+<div id="logo"><a href="/"><img src="{$CssDir/}images/logo.gif" alt="" /></a><br>
+<span>——山农大创业实践项目</span>
+</div>
+<p>
+<a onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('');" href="{$SiteURL/}">设为首页</a>
+<a href="javascript:window.external.addFavorite('{$SiteURL/}','{$SiteName/}');">加入收藏</a>
+</p>
+</div>
+<!--top end -->
+
+<div id="nav">
+<ul>
+<li class="i1"><a href="/">首页</a></li>
+<li class="i2"><a href="{ZL:GetNodeLinkUrl(1)/}">校园代理</a></li>
+<li class="i3"><a href="{ZL:GetNodeLinkUrl(2)/}">自主消费</a></li>
+<li class="i4"><a href="{ZL:GetNodeLinkUrl(3)/}">学习联盟</a></li>
+<li class="i5"><a href="{ZL.Label id="论坛地址"/}">论坛交流</a></li>
+<li class="i6"><a href="{ZL:GetInfoUrl(390)/}">联系我们</a></li>
+</ul>
+</div>
+<!--nav end -->
+
+<div id="elit">
+<div id="login">
+<iframe src="/login.aspx" marginwidth="1" marginheight="1" scrolling="no" border="0" allowtransparency="true" frameborder="0" width="220px" height="150px" ></iframe>
+
+</div>
+<div id="elit_r">
+<script type=text/javascript>
+var pic_width=680; //图片宽度
+var pic_height=288; //图片高度
+var button_pos=4; //按扭位置 1左 2右 3上 4下
+var stop_time=3000; //图片停留时间(1000为1秒钟)
+var show_text=0; //是否显示文字标签 1显示 0不显示
+var txtcolor="000000"; //文字色
+var bgcolor="DDDDDD"; //背景色
+var imag=new Array();
+var link=new Array();
+var text=new Array();
+imag[1]="{$CssDir/}images/01.jpg";
+link[1]="http://www.zoomla.cn/";
+text[1]="标题 1";
+imag[2]="{$CssDir/}images/02.jpg";
+link[2]="http://www.zoomla.cn/";
+text[2]="标题 2";
+imag[3]="{$CssDir/}images/03.jpg";
+link[3]="http://www.zoomla.cn/";
+text[3]="标题 3";
+imag[4]="{$CssDir/}images/01.jpg";
+link[4]="http://www.zoomla.cn/";
+text[4]="标题 4";
+imag[5]="{$CssDir/}images/05.jpg";
+link[2]="http://www.zoomla.cn/";
+text[5]="标题 5";
+//可编辑内容结束
+var swf_height=show_text==1?pic_height+20:pic_height;
+var pics="", links="", texts="";
+for(var i=1; i<imag.length; i++){
+	pics=pics+("|"+imag[i]);
+	links=links+("|"+link[i]);
+	texts=texts+("|"+text[i]);
+}
+pics=pics.substring(1);
+links=links.substring(1);
+texts=texts.substring(1);
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cabversion=6,0,0,0" width="'+ pic_width +'" height="'+ swf_height +'">');
+document.write('<param name="movie" value="{$CssDir/}swf/focus.swf">');
+document.write('<param name="quality" value="high"><param name="wmode" value="opaque">');
+document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&pic_width='+pic_width+'&pic_height='+pic_height+'&show_text='+show_text+'&txtcolor='+txtcolor+'&bgcolor='+bgcolor+'&button_pos='+button_pos+'&stop_time='+stop_time+'">');
+document.write('<embed src="{$CssDir/}swf/focus.swf" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&pic_width='+pic_width+'&pic_height='+pic_height+'&show_text='+show_text+'&txtcolor='+txtcolor+'&bgcolor='+bgcolor+'&button_pos='+button_pos+'&stop_time='+stop_time+'" quality="high" width="'+ pic_width +'" height="'+ swf_height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+document.write('</object>');
+</script>
+  
+  
+  </div>
+<div class="clear">
+
+
+</div>
+</div>
+<!--elit end -->
+
+<div id="show">
+<div id="show_l">
+<div id="show_search">
+<iframe src="Search/indexSearch.aspx" marginwidth="1" marginheight="1" scrolling="no" border="0" allowtransparency="true" frameborder="0" width="250px" height="30px" ></iframe>
+
+</div>
+<div id="show_map">
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=*&v=1.0&services=true" ></script>
+
+<div style="width:260px;height:180px;border:1px solid gary;margin-top:2px;" id="container"></div>   
+   <script type="text/javascript">   
+   var map = new BMap.Map("container"); 
+   map.centerAndZoom(new BMap.Point(117.139456,36.205552), 17); 
+   map.addControl(new BMap.NavigationControl());   
+   map.addControl(new BMap.ScaleControl());   
+   map.addControl(new BMap.OverviewMapControl()); 
+   var local = new BMap.LocalSearch(map, { 
+   renderOptions:{map: map} 
+   }); 
+   local.search("山东科技大学"); 
+   </script>
+<b> <a href="{ZL:GetNodeLinkUrl(22)/}"> 查看大图 </a></b>
+</div>
+</div><!--left end -->
+<div id="show_r">
+<div class="show_t"><span><a href="{ZL:GetNodeLinkUrl(1)/}">更多>></a></span>最新更新</div>
+<ul>
+{ZL.Label id="代理评价列表" TitleNum="40" ShowNum="10" /}
+</ul>
+<a href="/user"><img src="{$CssDir/}images/add.jpg" alt="我也发来发广告" /></a>
+</div><!--right end -->
+</div>
+<!--show end -->
+<div class="clear"></div>
+<div id="home_banner">
+<script type="text/javascript" src="{$AdDir/}/201107/2.js"></script>
+</div>
+
+
+<div id="bottom">
+<ul>
+<li ><a href="{ZL:GetInfoUrl(396)/}">版权声明</a></li>
+<li>|</li>
+<li><a href="{ZL:GetInfoUrl(397)/}">刊登广告</a></li>
+<li>|</li>
+<li><a href="{ZL:GetInfoUrl(398)/}">使用说明</a></li>
+<li>|</li>
+<li><a href="{ZL:GetNodeLinkUrl(18)/}">友情链接</a></li>
+<li>|</li>
+<li><a href="{ZL.Label id="论坛地址"/}">论坛交流</a></li>
+<li>|</li>
+<li><a href="{ZL:GetInfoUrl(390)/}">联系我们</a></li>
+</ul>
+<div class="clear"></div>
+<p>Copyright &copy;  2011 泰安大学生网  版权所有<br />
+技术支持：<a href="http://www.hx008.com" target="_blank">华夏互联hx008.com</a>
+</p>
+</div>
+</body>
+</html>

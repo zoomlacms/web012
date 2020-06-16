@@ -1,0 +1,54 @@
+﻿{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}_栏目列表</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+<link href="{$CssDir/}global.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#nav .i{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}{background:url({$CssDir/}images/nav_li.gif) bottom no-repeat; width:102px; height:36px;}
+#nav .i{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/} a{color:#F00;}
+</style>
+</head>
+<body>
+{ZL.Label id="top"/}
+
+<div id="brea"><p>您的位置：<a href="/">{$SiteName/}</a>>>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}</p></div>
+
+<div id="ban">
+
+<div class="bantit"><span><a href="{ZL:GetNodeLinkUrl(5)/}">more>></a></span>购物</div>
+
+{ZL.Label id="图片标题列表_商场代理" ShowNum="12" NodeID="5" TitleNum="20" /}
+
+
+</div>
+<div class=" clear"></div>
+<div class="grad">
+<div class="bantit"><span><a href="{ZL:GetNodeLinkUrl(6)/}">more>></a></span>学习</div>
+
+{ZL.Label id="图片标题列表_商场代理" ShowNum="12" NodeID="6" TitleNum="20" /}
+
+</div>
+<div class="clear"></div>
+
+<div class="grad">
+<div class="bantit"><span><a href="{ZL:GetNodeLinkUrl(7)/}">more>></a></span>培训</div>
+
+{ZL.Label id="图片标题列表_商场代理" ShowNum="12" NodeID="7" TitleNum="20" /}
+
+</div>
+<div class="clear"></div>
+
+<div class="grad">
+<div class="bantit"><span><a href="{ZL:GetNodeLinkUrl(8)/}">more>></a></span>其他</div>
+
+{ZL.Label id="图片标题列表_商场代理" ShowNum="12" NodeID="8" TitleNum="20" /}
+
+</div>
+<div class="clear"></div>
+{ZL.Label id="bottom"/}
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿ <html>
+ <head>
+ <title></title>
+ <script language="javascript">
+     //设置进度条进度
+     function SetPorgressBar(msg, pos) {
+         //设置进度条居中
+         var screenHeight = window.document.body.offsetHeight;
+         var screenWidth = window.document.body.offsetWidth;
+         ProgressBarSide.style.width = Math.round(screenWidth / 2);
+         ProgressBarSide.style.left = Math.round(screenWidth / 4);
+         ProgressBarSide.style.top = Math.round(screenHeight / 2);
+         ProgressBarSide.style.height = "21px";
+         ProgressBarSide.style.display = "";
+
+         //设置进度条百分比                       
+         ProgressBar.style.width = pos + "%";
+         ProgressText.innerHTML = "正在创建数据库：" + pos + "%";
+
+     }
+
+     //设置进度条完成信息
+     function SetCompleted(msg) {
+         ProgressBarSide.style.display = "none";
+     }
+ </script>
+ </head>
+ <body>
+  <div id="ProgressBarSide" style="position:absolute;height:21x;width:100px;color:Silver;border-width:1px;border-style:Solid;display:none">
+        <div id="ProgressBar" style="position:absolute;height:21px;width:0%;background-color:#3366FF"></div>
+        <div id="ProgressText" style="position:absolute;height:21px;width:100%;text-align:center"></div>
+    </div>
+
+ </body>
+ </html>

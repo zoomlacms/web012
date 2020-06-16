@@ -1,0 +1,105 @@
+﻿{ZL.Source id="视频数据源标签"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{SField sid="视频数据源标签" FD="Title" page="0"/}</title>
+<meta name="Keywords" content="{SField sid="视频数据源标签" FD="Tagkey" page="0"/}" />
+<link href="{$CssDir/}global.css" rel="stylesheet" type="text/css" />
+<link href="../style/global.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#Menu{SField sid="视频数据源标签" FD="NodeID" page="0"/} a span:hover{ text-decoration:underline;}
+#Menu{SField sid="视频数据源标签" FD="NodeID" page="0"/} a span{background:url({$CssDir/}Images/top_nav.gif) no-repeat 0px -42px; font-weight:bold; color:#fff; text-decoration:none;width:77px; height:38px; display:block;}
+</style>
+</head>
+<body>
+<div class="banner">
+  <img src="{$CssDir/}images/banner.jpg">
+</div>
+
+
+{ZL.Label id="导航"/}
+
+<div id="main">
+
+<div id="xmain_r">
+<div id="xele">
+<div id="xeles">
+<span>当前位置：<A href="/">{$SiteName/} </A> &gt;{ZL.Label id="抽取父节点ID名与链接" NodeID="{SField sid="视频数据源标签" FD="NodeID" page="0"/}"/}&gt;<a href="{ZL:GetNodeLinkUrl({SField sid="文章模型数据源标签" FD="NodeID" page="0"/})/}">{ZL.Label id="输出指定ID节点名" NodeID="{SField sid="视频数据源标签" FD="NodeID" page="0"/}" /}</a> </span>
+</div>
+</div>
+
+<div class="mainli  mgt5">
+<div id="xmrb_r">
+<h1>{SField sid="视频数据源标签" FD="Title" page="0"/}</h1>
+<abbr><span id="author">作者：{SField sid="视频数据源标签" FD="author" page="0"/} 来源：{SField sid="视频数据源标签" FD="source" page="0"/} 发布时间：{ZL:FormatDate({SField sid="视频数据源标签" FD="CreateTime" page="0"/},yyyy-MM-dd)/} 点击数：<SCRIPT language=javascript src="/Common/GetHits.aspx?id={SField sid="视频数据源标签" FD="GeneralID" page="0"/}"></SCRIPT></span>
+</abbr>
+<div id="content">
+<div id="player{SField sid="视频数据源标签" FD="GeneralID" page="0"/}" style="width:600px;height:400px;;color:#ffffff; margin-top:20px; text-align:center;"></div>
+<script> 
+ var temp = '{ZL:GetPicUrl({SField sid="视频数据源标签" FD="flv" page="0"/})/}';
+ var strHtml;
+    strHtml="<object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' width='580' height='360'><param name='movie' value='flv.swf?file="+temp+"&showdigits=true&autostart=true&repeat=true' /><param name='menu' value='false' /><param name='play' value='true' /><param name='wmode' value='transparent' /><param name='quality' value='high' /></object>";
+ player{SField sid="视频数据源标签" FD="GeneralID" page="0"/}.innerHTML=strHtml;
+</script>
+<div style="clear:both"></div>
+视频说明：
+{SField sid="视频数据源标签" FD="content" page="0"/}
+</div></div>
+
+<div id="begin"><span id="asc">上一篇文章：{ZL.Label id="上一篇文章"/}</span> <span id="desc">下一篇文章：{ZL.Label id="下一篇文章"/}</span></div>
+</div>
+</div>
+
+<div id="xmainL">
+
+<div class="mainli mgt5">
+<div class="mainL_t">
+<span><a href="{ZL:GetNodeLinkUrl(101)/}">更多>></a></span><b>军事新闻</b>
+</div>
+<ul>
+{ZL.Label id="节点输出子节点下相关文章列表" NodeID="101" TitleNum="20" ShowNum="5" /}
+</ul>
+</div>
+
+<div class="mainli mgt5">
+  <div class="mainL_t">
+<span><a href="{ZL:GetNodeLinkUrl(106)/}">更多>></a></span><b>娱乐新闻</b>
+</div>
+<ul>
+{ZL.Label id="节点输出子节点下相关文章列表" NodeID="106" TitleNum="20" ShowNum="5" /}
+</ul>
+</div>
+<div class="mainli mgt5">
+<div class="mainL_t">
+<span><a href="{ZL:GetNodeLinkUrl(107)/}">更多>></a></span><b>体育新闻</b>
+</div>
+<ul>
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="107" TitleNum="20" ShowNum="5" /}
+</ul>
+</div>
+</div>
+</div>
+<!--主体结束 -->
+
+<div class="clear"></div>
+<div id="friend">
+
+</div>
+<div id="bot_nav">
+<ul>
+<li><a href="{ZL:GetInfoUrl(393)/}" target="_blank">网站邮箱</a></li><li> |</li> 
+<li><a href="{ZL:GetInfoUrl(394)/}" target="_blank">在线投稿</a></li><li> |</li> 
+<li><a href="{ZL:GetInfoUrl(395)/}" target="_blank">纠错举报</a></li><li> |</li>
+<li><a href="{ZL:GetInfoUrl(396)/}" target="_blank">关于我们</a></li><li> |</li>
+<li><a href="{ZL:GetInfoUrl(397)/}" target="_blank">网站地图</a></li> 
+</ul>
+</div>
+<div id="copyright">
+Copyright © 1999-2010 Chinamil.com.cn All Rights Reserved. 本网站刊登的新闻信息和专题专栏资料，均为中国军网版权所有，<br>
+未经协议授权，禁止下载使用。制作单位：解放军报社网络部 （浏览本网主页，建议将电脑显示屏的分辨率调为1024*768） 京ICP备11009437号   
+</div>
+
+
+</body>
+</html>

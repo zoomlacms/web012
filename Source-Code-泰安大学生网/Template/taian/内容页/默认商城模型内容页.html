@@ -1,0 +1,75 @@
+﻿{ZL.Source id="常规商品数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{SField sid="常规商品数据源" FD="Proname" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="常规商品数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="常规商品数据源" FD="Meta_Description" page="0"/}" />
+<link href="{$CssDir/}global.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#nav .i{SField sid="常规商品数据源" FD="FirstNodeID" page="0"/}{background:url({$CssDir/}images/nav_li.gif) bottom no-repeat; width:102px; height:36px;}
+#nav .i{SField sid="常规商品数据源" FD="FirstNodeID" page="0"/} a{color:#F00;}
+</style>
+</head>
+<body>
+{ZL.Label id="top"/}
+
+<div id="brea"><p>您的位置：<a href="/">{$SiteName/}</a>>><a href="{ZL:GetNodeLinkUrl({SField sid="常规商品数据源" FD="NodeID" page="0"/})/}">{ZL.Label id="输出指定ID节点名" NodeID="{SField sid="常规商品数据源" FD="Nodeid" page="0"/}" /}</a>>>商品介绍</p></div>
+
+<div id="woj">
+<div id="woj_l">
+ <div id="woj_ltit"> <h1>{SField sid="常规商品数据源" FD="Proname" page="0"/}</h1></div>  <br />
+
+  <img src="{SField sid="常规商品数据源" FD="Thumbnails" page="0"/}">
+  
+ <p> <b> ￥{ZL:GetMoney({SField sid="常规商品数据源" FD="LinPrice" page="0"/},1,1)/}</b><br />
+ <span> 原价 <del> {ZL:GetMoney({SField sid="常规商品数据源" FD="ShiPrice" page="0"/},1,1)/}</del></span>   <br />
+ 商家地址：{SField sid="常规商品数据源" FD="xiang" page="0"/}
+ </p>
+ 
+ <div class="clear"></div>
+ <script type="text/javascript" src="http://api.map.baidu.com/api?key=*&v=1.0&services=true" ></script>
+
+ <div style="width:655px;height:240px;border:1px solid gary;margin-top: 15px;" id="container"></div>   
+   <script type="text/javascript">   
+   var map = new BMap.Map("container"); 
+   map.centerAndZoom(new BMap.Point({SField sid="常规商品数据源" FD="zuob" page="0"/}), 17); 
+   map.addControl(new BMap.NavigationControl());   
+   map.addControl(new BMap.ScaleControl());   
+   map.addControl(new BMap.OverviewMapControl()); 
+   var local = new BMap.LocalSearch(map, { 
+   renderOptions:{map: map} 
+   }); 
+   local.search("{SField sid="常规商品数据源" FD="xiang" page="0"/}"); 
+   </script>
+<div id="tiao">
+<div id="tiao_tit">【团购详情】</div>
+  {SField sid="常规商品数据源" FD="Procontent" page="0"/}
+</div>
+
+<div id="yoad">
+<div id="yoad_tit">
+【备注】
+</div>
+
+  {SField sid="常规商品数据源" FD="beizhu" page="0"/}
+
+</div>
+
+</div>
+<div id="woj_r">
+<div id="wojk">
+<div id="wojk_tit">最新团购</div>
+<ul>
+{ZL.Label id="商品标题列表" NodeID="15" ShowNum="10" TitleNum="32" /}	
+</ul>
+</div>
+
+</div>
+<div class="clear"></div>
+</div>
+
+{ZL.Label id="bottom"/}
+</body>
+</html>

@@ -1,0 +1,60 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <NodeID>116</NodeID>
+    <NodeName>装备商城</NodeName>
+    <NodeType>1</NodeType>
+    <NodeDir>zbsc</NodeDir>
+    <NodeUrl />
+    <NodeListUrl />
+    <Tips>装备 商城</Tips>
+    <ParentID>0</ParentID>
+    <OrderID>114</OrderID>
+    <Child>14</Child>
+    <Depth>1</Depth>
+    <NodePicUrl>/Template/EDUEquip/images/icon02.png</NodePicUrl>
+    <Description>装备 商城</Description>
+    <Meta_Keywords>装备 商城</Meta_Keywords>
+    <Meta_Description>装备 商城</Meta_Description>
+    <OpenType>false</OpenType>
+    <PurviewType>false</PurviewType>
+    <CommentType>false</CommentType>
+    <HitsOfHot>0</HitsOfHot>
+    <ListTemplateFile />
+    <IndexTemplate>/装备商城/商城首页.html</IndexTemplate>
+    <LastinfoTemplate />
+    <HotinfoTemplate />
+    <ProposeTemplate />
+    <ContentModel>51</ContentModel>
+    <ItemOpenType>false</ItemOpenType>
+    <ContentHtmlRule>2</ContentHtmlRule>
+    <ListPageHtmlEx>3</ListPageHtmlEx>
+    <ContentFileEx>3</ContentFileEx>
+    <HtmlPosition>1</HtmlPosition>
+    <NodeListType>5</NodeListType>
+    <ConsumePoint>0</ConsumePoint>
+    <ConsumeType>0</ConsumeType>
+    <ConsumeTime>0</ConsumeTime>
+    <ConsumeCount>0</ConsumeCount>
+    <Shares>0</Shares>
+    <Custom />
+    <SafeGuard>0</SafeGuard>
+    <ItemOpenTypeTrue>_blank</ItemOpenTypeTrue>
+    <OpenTypeTrue>_blank</OpenTypeTrue>
+    <NodeBySite>0</NodeBySite>
+    <SiteConfige />
+    <Contribute>0</Contribute>
+    <SiteContentAudit>0</SiteContentAudit>
+    <AuditNodeList />
+    <AddPoint>0</AddPoint>
+    <AddMoney>0.0000</AddMoney>
+    <ClickTimeout>1</ClickTimeout>
+    <Purview>&lt;View&gt;allUser&lt;/View&gt;&lt;ViewGroup&gt;1,6&lt;/ViewGroup&gt;&lt;ViewSunGroup&gt;1,6&lt;/ViewSunGroup&gt;&lt;input&gt;1,6&lt;/input&gt;&lt;forum&gt;1,2&lt;/forum&gt;</Purview>
+    <AddUserExp>0</AddUserExp>
+    <DeducUserExp>0</DeducUserExp>
+    <ListPageEx>3</ListPageEx>
+    <LastinfoPageEx>3</LastinfoPageEx>
+    <HotinfoPageEx>3</HotinfoPageEx>
+    <ProposePageEx>3</ProposePageEx>
+  </Table>
+</NewDataSet>

@@ -1,0 +1,325 @@
+#ann {
+	BORDER-BOTTOM: #e6e7e1 1px solid; BORDER-LEFT: #e6e7e1 0px solid; PADDING-BOTTOM: 2px; LINE-HEIGHT: 30px; MARGIN: 5px 0px 10px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #f7f7f7; BORDER-TOP: #e6e7e1 1px solid; BORDER-RIGHT: #e6e7e1 0px solid; PADDING-TOP: 2px
+}
+#ann DL {
+	OVERFLOW: hidden
+}
+#ann DT {
+	TEXT-INDENT: 2em; WIDTH: 5em; BACKGROUND: url(ann_icon.gif) no-repeat 0px 50%; FLOAT: left; FONT-WEIGHT: 700
+}
+#ann DD {
+	MARGIN-LEFT: 30px
+}
+#ann LI {
+	PADDING-LEFT: 10px; WHITE-SPACE: nowrap
+}
+#ann EM {
+	COLOR: #666; MARGIN-LEFT: 5px; FONT-SIZE: 0.83em
+}
+#annbody {
+	PADDING-RIGHT: 16px; HEIGHT: 30px; OVERFLOW: hidden
+}
+.forumcount {
+	MARGIN-LEFT: 16px
+}
+.forumlinks {
+	PADDING-BOTTOM: 6px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; BORDER-TOP: #e6e7e1 1px solid; PADDING-TOP: 6px
+}
+.forumimglink {
+	PADDING-BOTTOM: 6px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; BORDER-TOP: #e6e7e1 1px solid; PADDING-TOP: 6px
+}
+.forumtxtlink {
+	PADDING-BOTTOM: 6px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; BORDER-TOP: #e6e7e1 1px solid; PADDING-TOP: 6px
+}
+.forumlinks UL LI {
+	LINE-HEIGHT: 1.4em; WIDTH: 49%; FLOAT: left; HEIGHT: 50px
+}
+.forumimglink A {
+	MARGIN-RIGHT: 8px
+}
+.forumimglink IMG {
+	MARGIN: 2px 0px
+}
+.forumlogo {
+	WIDTH: 100px; FLOAT: left; PADDING-TOP: 2px
+}
+.forumcontent {
+	PADDING-RIGHT: 18px; HEIGHT: 50px
+}
+.forumcontent P {
+	HEIGHT: 17px; COLOR: #666; OVERFLOW: hidden
+}
+.forumtxtlink LI {
+	WIDTH: 8em; TEXT-OVERFLOW: ellipsis; WHITE-SPACE: nowrap; FLOAT: left; OVERFLOW: hidden; MARGIN-RIGHT: 5px
+}
+#online H3 {
+	FONT-WEIGHT: 400
+}
+#online H3 A {
+	FONT-WEIGHT: 700
+}
+#online H3 EM {
+	FONT-WEIGHT: 700
+}
+#online H3 STRONG {
+	FONT-WEIGHT: 700
+}
+.feed {
+	BORDER-TOP: #e6e7e1 3px solid
+}
+#onlinelist {
+	
+}
+#onlinelist DT {
+	PADDING-BOTTOM: 1em; PADDING-LEFT: 1em; PADDING-RIGHT: 1em; BORDER-TOP: #e6e7e1 1px solid; PADDING-TOP: 1em
+}
+#onlinelist DD {
+	PADDING-BOTTOM: 1em; PADDING-LEFT: 1em; PADDING-RIGHT: 1em; BORDER-TOP: #e6e7e1 1px solid; PADDING-TOP: 1em
+}
+#onlinelist DD UL LI {
+	LINE-HEIGHT: 14px; MARGIN: 4px 0px; WIDTH: 20%; FLOAT: left; HEIGHT: 14px
+}
+#onlinelist DT IMG {
+	VERTICAL-ALIGN: middle
+}
+#onlinelist DD IMG {
+	VERTICAL-ALIGN: middle
+}
+#sidebar_img {
+	Z-INDEX: 98; POSITION: relative; PADDING-BOTTOM: 6px; MARGIN: 0px 6px; PADDING-LEFT: 6px; PADDING-RIGHT: 25px; DISPLAY: inline; BACKGROUND: url(sidebar_toggle.gif) no-repeat 100% 5px; FLOAT: right; COLOR: #09c; PADDING-TOP: 6px
+}
+.collapsed_no:hover {
+	BACKGROUND-POSITION: 100% -35px; TEXT-DECORATION: none
+}
+.collapsed_yes {
+	BACKGROUND-POSITION: 100% -75px
+}
+.collapsed_yes:hover {
+	BACKGROUND-POSITION: 100% -115px; TEXT-DECORATION: none
+}
+.textinfolist LI {
+	MARGIN-BOTTOM: 2px
+}
+.side .textinfolist LI A {
+	COLOR: #444; TEXT-DECORATION: none
+}
+.side .textinfolist LI A:hover {
+	TEXT-DECORATION: underline
+}
+.side_poll LI {
+	LINE-HEIGHT: 1.8em
+}
+.side_trade LI {
+	PADDING-BOTTOM: 5px
+}
+.side_trade LI STRONG {
+	TEXT-ALIGN: center; WIDTH: 80px; FLOAT: left; HEIGHT: auto
+}
+.side_type {
+	BORDER-BOTTOM: #b0e4ef 1px solid; MARGIN: 0px 4px; HEIGHT: 23px
+}
+.side_type H4 {
+	BORDER-BOTTOM: #b0e4ef 1px solid; BORDER-LEFT: #b0e4ef 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 22px; MARGIN: 0px 0px -1px 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; FLOAT: left; HEIGHT: 22px; COLOR: #999; BORDER-TOP: #b0e4ef 1px solid; CURSOR: pointer; FONT-WEIGHT: 300; BORDER-RIGHT: #b0e4ef 1px solid; PADDING-TOP: 0px
+}
+.side_type H4.current {
+	BORDER-BOTTOM-COLOR: #ebf2f8; MARGIN-BOTTOM: 1px; BACKGROUND: #ebf2f8; BORDER-BOTTOM-WIDTH: 1px; HEIGHT: 23px; COLOR: #09c; FONT-WEIGHT: 700
+}
+.combine H4 {
+	DISPLAY: none
+}
+H3.requesttabs {
+	PADDING-BOTTOM: 4px; LINE-HEIGHT: 22px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; HEIGHT: 22px; COLOR: #09c; FONT-WEIGHT: 700; PADDING-TOP: 4px
+}
+.requesttabs SPAN {
+	FLOAT: right; COLOR: #999; FONT-WEIGHT: 300
+}
+.with_side .side H3.requesttabs A {
+	MARGIN: 0px 4px; COLOR: #999; FONT-WEIGHT: 300; TEXT-DECORATION: none
+}
+.with_side .side H3.requesttabs A:hover {
+	TEXT-DECORATION: underline
+}
+.with_side .side H3.requesttabs A.current {
+	COLOR: #444; FONT-WEIGHT: 700
+}
+#headsearch EM {
+	COLOR: #09c; FONT-SIZE: 20px; MARGIN-RIGHT: 10px
+}
+#qihoosearch INPUT {
+	MARGIN: 6px 0px
+}
+#gform INPUT#q {
+	MARGIN: 6px 0px
+}
+#hot {
+	MARGIN-BOTTOM: 20px
+}
+#hot H3 {
+	MARGIN-BOTTOM: 10px; COLOR: #999; FONT-SIZE: 14px
+}
+#hot .desc {
+	COLOR: #666
+}
+#hot .desc A {
+	COLOR: #09c
+}
+#hot .cite {
+	COLOR: #999
+}
+#hot CITE {
+	COLOR: #999
+}
+#hot CITE A {
+	COLOR: #999
+}
+#hot DT {
+	POSITION: relative; BACKGROUND: url(dot_c.gif) no-repeat 0px 50%
+}
+#hot LI {
+	POSITION: relative; BACKGROUND: url(dot_c.gif) no-repeat 0px 50%
+}
+#hot_img {
+	WIDTH: 200px; PADDING-RIGHT: 14px; FLOAT: left; BORDER-RIGHT: #e6e7e1 1px dashed
+}
+#hot_img IMG {
+	BORDER-BOTTOM: #e6e7e1 1px solid; BORDER-LEFT: #e6e7e1 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; WIDTH: 200px; PADDING-RIGHT: 2px; MARGIN-BOTTOM: 1em; HEIGHT: 150px; BORDER-TOP: #e6e7e1 1px solid; BORDER-RIGHT: #e6e7e1 1px solid; PADDING-TOP: 2px
+}
+#hot_img H2 {
+	POSITION: relative
+}
+#hot_img .desc {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 5px
+}
+.img #hot_main {
+	WIDTH: 100%; FLOAT: right; MARGIN-LEFT: -230px
+}
+.img DL {
+	MARGIN-LEFT: 230px
+}
+.img UL {
+	MARGIN-LEFT: 230px
+}
+#hot DT STRONG {
+	MARGIN-RIGHT: 1em
+}
+#hot DL {
+	BORDER-TOP: #e6e7e1 1px dashed
+}
+#hot DT {
+	PADDING-LEFT: 10px
+}
+#hot DD {
+	PADDING-LEFT: 10px
+}
+#hot DT {
+	BACKGROUND-POSITION: 0px 15px; PADDING-TOP: 8px
+}
+#hot DD {
+	BORDER-BOTTOM: #e6e7e1 1px dashed; PADDING-BOTTOM: 8px; COLOR: #666
+}
+#hot UL {
+	BORDER-BOTTOM: #e6e7e1 1px dashed; PADDING-BOTTOM: 8px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 8px
+}
+#hot LI {
+	LINE-HEIGHT: 22px; TEXT-INDENT: 10px; WIDTH: 49.5%; TEXT-OVERFLOW: ellipsis; WHITE-SPACE: nowrap; FLOAT: left; HEIGHT: 22px; OVERFLOW: hidden
+}
+#hot .deloption {
+	BORDER-BOTTOM: #fff 3px solid; POSITION: absolute; BORDER-LEFT: #fff 3px solid; BACKGROUND-COLOR: #fff; MARGIN: 0px; BORDER-TOP: #fff 3px solid; RIGHT: 0px; BORDER-RIGHT: #fff 3px solid
+}
+.taglist {
+	
+}
+.taglist A {
+	LINE-HEIGHT: 30px; HEIGHT: 30px; WORD-BREAK: keep-all; MARGIN-RIGHT: 20px
+}
+#infoside .taglist A {
+	LINE-HEIGHT: 22px; HEIGHT: 22px; MARGIN-RIGHT: 10px
+}
+A.tagl1 {
+	COLOR: #666 !important; FONT-SIZE: 12px
+}
+A.tagl2 {
+	COLOR: #666 !important; FONT-SIZE: 12px
+}
+A.tagl2 {
+	COLOR: #999 !important
+}
+A.tagl3 {
+	COLOR: #090 !important; FONT-SIZE: 14px
+}
+A.tagl4 {
+	COLOR: #09c !important; FONT-SIZE: 16px
+}
+A.tagl5 {
+	COLOR: #f60 !important; FONT-SIZE: 18px
+}
+.titlelist LI {
+	MARGIN: 3px 0px; BACKGROUND: url(dot.gif) no-repeat 8px 9px; HEIGHT: 1.6em; OVERFLOW: hidden
+}
+.titlelist LI A {
+	PADDING-LEFT: 16px
+}
+.titlelist LI CITE {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 90px; PADDING-RIGHT: 10px; FLOAT: right; OVERFLOW: hidden; PADDING-TOP: 0px
+}
+.titlelist LI CITE A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #666; PADDING-TOP: 0px
+}
+.postbtn {
+	FLOAT: left; COLOR: #09c; CURSOR: pointer; MARGIN-RIGHT: 10px
+}
+.replybtn {
+	FLOAT: left; COLOR: #09c; CURSOR: pointer; MARGIN-RIGHT: 10px
+}
+#modopt {
+	FLOAT: left; COLOR: #09c; CURSOR: pointer; MARGIN-RIGHT: 10px
+}
+#modopttmp {
+	FLOAT: left; COLOR: #09c; CURSOR: pointer; MARGIN-RIGHT: 10px
+}
+#modopt {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #999 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 20px; BACKGROUND-COLOR: #fff; PADDING-LEFT: 6px; PADDING-RIGHT: 16px; BORDER-TOP: #999 1px solid; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 0px
+}
+#modopttmp {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #999 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 20px; BACKGROUND-COLOR: #fff; PADDING-LEFT: 6px; PADDING-RIGHT: 16px; BORDER-TOP: #999 1px solid; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 0px
+}
+.threadlist TFOOT A {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #999 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 20px; BACKGROUND-COLOR: #fff; PADDING-LEFT: 6px; PADDING-RIGHT: 16px; BORDER-TOP: #999 1px solid; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 0px
+}
+.threadlist TFOOT A {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 16px; MARGIN-RIGHT: 5px; PADDING-TOP: 3px
+}
+#modopt:hover {
+	COLOR: #09c; TEXT-DECORATION: none
+}
+#modopttmp:hover {
+	COLOR: #09c; TEXT-DECORATION: none
+}
+.threadlist TFOOT A:hover {
+	COLOR: #09c; TEXT-DECORATION: none
+}
+.postbtn {
+	TEXT-ALIGN: center; LINE-HEIGHT: 32px; WIDTH: 67px; BACKGROUND: url(newtopic.gif) no-repeat 0px 0px; HEIGHT: 30px; FONT-SIZE: 14px; OVERFLOW: hidden; FONT-WEIGHT: 700
+}
+.replybtn {
+	TEXT-ALIGN: center; LINE-HEIGHT: 32px; WIDTH: 67px; BACKGROUND: url(newtopic.gif) no-repeat 0px 0px; HEIGHT: 30px; FONT-SIZE: 14px; OVERFLOW: hidden; FONT-WEIGHT: 700
+}
+.replybtn {
+	BACKGROUND-IMAGE: url(reply.gif)
+}
+.postbtn A {
+	PADDING-LEFT: 5px; DISPLAY: block; LETTER-SPACING: 5px; COLOR: #fff
+}
+.replybtn A {
+	PADDING-LEFT: 5px; DISPLAY: block; LETTER-SPACING: 5px; COLOR: #fff
+}
+.postbtn A:hover {
+	TEXT-DECORATION: none
+}
+.replybtn A:hover {
+	TEXT-DECORATION: none
+}
+
+.FL{float:left; width:20%;padding-left:40px;}
+.RL{float:right;width:75%;}
+.bt1{ border:0px; color:#97F2FF; background-color:#00A0D0;padding-top:4px;}
